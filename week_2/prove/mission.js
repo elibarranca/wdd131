@@ -9,11 +9,11 @@ function changeTheme() {
     if (current == 'dark') {
         document.body.style.backgroundColor = "black";
         document.body.style.color = "white";
-        logo.src = "images/BYUI_logo_dark.png";
+        logo.src = "https://elibarranca.github.io/wdd131/week_2/prove/images/BYUI_logo_black.png";
     } else {
         document.body.style.backgroundColor = "white";
         document.body.style.color = "black";
-        logo.src = "images/BYUI_logo.jpg";
+        logo.src = "https://elibarranca.github.io/wdd131/week_2/prove/images/BYUI_logo.jpg";
     }
 }           
                     
