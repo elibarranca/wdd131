@@ -2,7 +2,9 @@ header {
   font-size: 2em;
 }
 main {
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  background: lightgrey;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
@@ -23,20 +25,15 @@ footer {
   background-color: #2a81e2;
   color: white;
 }
-main {
-  display: grid;
-  grid-template-columns: 1rem;
-  background: lightgrey;
-}
 h1,
 h2 {
   text-align: center;
 }
 section {
-  padding: 20px;
+  padding: 8px;
   background-color: white;
   margin: 1em;
-  border: 1px solid #ccc;
+  border: 0.5px solid #ccc;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 nav a {
