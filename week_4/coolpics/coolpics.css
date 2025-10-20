@@ -62,12 +62,6 @@ nav a:hover {
   text-decoration: underline;
   color: #616061;
 }
-.menu-btn {
-  cursor: pointer;
-  border: none;
-  background-color: White;
-  gap: 1rem;
-}
 .gallery {
   display: grid;
   padding: 1rem;
@@ -80,7 +74,22 @@ nav a:hover {
   border: 1px solid #ccc;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
-.gallery section:hover {
+dialog img {
+  width: 90%;
+  display: block;
+  margin: 20vh auto;
+}
+dialog {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.close-viewer {
+  position: absolute;
+  top: 10vh;
+  right: 2vh;
+  padding: 3px 6px;
+  font-size: 1.5em;
 }
 footer {
   background-color: #2a81e2;
@@ -98,7 +107,22 @@ footer {
   }
   .menu-btn {
     display: none;
+    cursor: pointer;
+    border: none;
+    background-color: White;
+    gap: 1rem;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: Roboto, sans-serif;
+    color: white;
   }
+
+  .menu-btn:hover {
+  text-decoration: underline;
+  background-color: #2a81e2;
+  color: white;
+  
   main {
     display: grid;
     grid-template-columns: 1fr 1fr;
