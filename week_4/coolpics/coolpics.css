@@ -65,17 +65,22 @@ nav a:hover {
 .menu-btn {
   cursor: pointer;
   border: none;
-  background-color: transparent;
+  background-color: White;
+  gap: 1rem;
 }
-.bar1,
-.bar2,
-.bar3,
-.bar4,
-.bar5 {
-  width: 30px;
-  height: 4px;
-  background-color: black;
-  margin: 5px 0;
+.gallery {
+  display: grid;
+  padding: 1rem;
+  background-color: #d3d3d3;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.gallery section {
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.gallery section:hover {
 }
 footer {
   background-color: #2a81e2;
