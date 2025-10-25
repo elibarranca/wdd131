@@ -6,14 +6,14 @@ steps.forEach(function(step){
 
 let myList= document.querySelector("#myList");
 
-const stepsHTML = steps.map(listTemplate);
+const stepsHtml = steps.map(listTemplate);
 
 function listTemplate(item){
     return `<li> + ($item) +</li>`;
 }
 
 console.log(stepsHtml);
-myList. innerHtml = stepsHtml.join(" ");
+myList. innerHTML = stepsHtml.join(" ");
 
 
 
@@ -85,7 +85,7 @@ const students = [
 ];
 let container = document.querySelector("#studentContainer");
 students.forEach(function(item){
-    let name = document.create Element("div");}
+    let name = document.createElement("div");}
     let html = `
     <span>${item.first}</span>
     <span>${item.last}</span>
@@ -93,3 +93,4 @@ students.forEach(function(item){
     name.innerHtml = html;
 
           
+n 
