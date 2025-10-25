@@ -1,6 +1,5 @@
-
-const articles = [
-	{
+const books = [
+	/*{
 		id: 1,
 		title: 'Septimus Heap Book One: Magyk',
 		date: 'July 5, 2022',
@@ -11,7 +10,7 @@ const articles = [
 		ages: '10-14',
 		genre: 'Fantasy',
 		stars: '⭐⭐⭐⭐'
-	},
+	},*/
 	{
 		id: 2,
 		title: 'Magnus Chase Book One: Sword of Summer',
@@ -38,5 +37,25 @@ const articles = [
 		genre: "Fantasy",
 		stars: "⭐⭐⭐⭐⭐"
 	}
-];
-                
+    ];
+  let bookList = document.querySelector("#book-list");
+  
+  books.forEach(book => {
+
+  let html = `<article class = "book">
+    <div class="book-information">
+        <p><strong>Release Date:</strong>${book.date}</p>
+        <p><strong>Recommended Age:</strong>${book.ages}</p>
+        <p><strong>Genre:</strong>${book.genre}</p>
+        <p><strong>Rating:</strong> <span aria-label=${book.stars.length}role="image">${book.stars}</span></p>
+    </div>
+    <div class="book-description">   
+        <h2>${book.title}</h2>
+        <img src="${book.imgSrc}" alt=${book.imgAlt}>
+        <p id='desc'>${book.description}</p>
+    </div>
+    </article>`;
+
+    bookList.innerHTML += html;
+
+    });        
