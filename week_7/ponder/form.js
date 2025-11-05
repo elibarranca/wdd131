@@ -1,4 +1,3 @@
-
 // get a reference to the form. We can access all the named form inputs through the form element.
     const theForm = document.querySelector('#checkoutForm');
     // target the drop down select for aria
