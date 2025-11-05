@@ -1,7 +1,7 @@
 const aCourse = {
     code: "WDD131",
     name: "Javascript Language",
-    logo: "week_8/images/js_logo.png",
+    logo: "https://elibarranca.github.io/wdd131/week_8/images/js_logo.png",
     sections: [
     { sectionNum: 1, roomNum: 'STC 353', enrolled: 26, days: 'TTh', instructor: 'Bro T'},
     { sectionNum: 2, roomNum: 'STC 347', enrolled: 28, days: 'TTh', instructor: 'Sis A'}
