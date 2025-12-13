@@ -1,20 +1,16 @@
-const aCourse = {
-    code: "WDD131",
-    name: "Javascript Language",
-    logo: "https://elibarranca.github.io/wdd131/week_8/images/js_logo.png",
-    sections: [
-    { sectionNum: 1, roomNum: 'STC 353', enrolled: 26, days: 'TTh', instructor: 'Bro T'},
-    { sectionNum: 2, roomNum: 'STC 347', enrolled: 28, days: 'TTh', instructor: 'Sis A'}
-    ],
-    enrollStudent: function (sectionNum) {
-        console.log('student enrolled');
-        // find the right section...Array.findIndex will work here
-        const sectionIndex = this.sections.findIndex(
-          (section) => section.sectionNum == sectionNum
-        );
-        if (sectionIndex >= 0) {
-          this.sections[sectionIndex].enrolled++;
-          renderSections(this.sections);
+const character = {
+    name: "Snortleblat",
+    class: "Swamp Beast Diplomat",
+    level: 5,
+    health: 40,
+    image: "https://elibarranca.github.io/wdd131/week_8/images/snortleblat.jpg",
+ 
+    attack: function () {
+        character.health -=20;
+        // the chatacter loses 20 pints when it is attacked
+        if (character.health <= 0) {
+          character.health = 0;
+          alert('Your character has died!💀');
         }
       }
   };
@@ -53,3 +49,7 @@ document.querySelector("#enrollStudent").addEventListener("click", function () {
     const sectionNum = document.querySelector("#sectionNumber").value;
     aCourse.enrollStudent(sectionNum);
 });
+
+
+
+
