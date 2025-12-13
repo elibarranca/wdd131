@@ -1,42 +1,77 @@
-/* form-demo.css */
 body {
   font-size: 1.2em;
-}
-form {
-  width: 50%;
-  margin: 0 auto;
-}
-h1,
-h2 {
-  text-align: center;
-}
-label {
-  display: block;
-  margin-bottom: 8px;
+  font-family: Arial, sans-serif;
 }
 
-input,
-select,
-textarea {
-  width: 100%;
+header h1 {
+  text-align: center;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.card-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.card-front,
+.card-back {
+  background: #ddd;
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+.card-front {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 0.75rem;
+}
+
+.card-front label,
+.card-front input {
+  grid-column: 1 / -1;
+}
+
+.total {
+  font-weight: bold;
+}
+
+.icon {
+  text-align: right;
+  font-size: 1.5rem;
+}
+
+#cardExpiration {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.card-back {
+  width: 60%;
+  justify-self: end;
+}
+
+input {
   padding: 10px;
-  margin-bottom: 10px;
-  box-sizing: border-box;
-  border: 1px solid #ccc; /* Add a border to make it visually consistent */
   border-radius: 4px;
+  border: 1px solid #ccc;
 }
+
 button {
-  background-color: #4caf50;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 4px;
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid black;
+  background: white;
   cursor: pointer;
+  justify-self: end;
 }
+
 .errors {
-  white-space: pre-line; /*needed for 2 errors to be on separate lines*/
+  white-space: pre-line;
   color: red;
-}
-.hide {
-  display: none;
 }
