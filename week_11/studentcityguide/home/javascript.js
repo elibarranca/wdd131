@@ -16,7 +16,7 @@ const activities = [
         name: "Gravity Factory",
         description: "Have fun with your friends in the foam pit!.",
         image: "https://elibarranca.github.io/wdd131/week_11/studentcityguide/images/gravity-factory.png",
-        mapLink: "https://maps.app.goo.gl/vaz7EAErrV6EMJNt5"
+        mapLink: "https://maps.google.com/?q=Gravity+Factory+Rexburg+Idaho"
     }
 ];
 
