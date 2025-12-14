@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Book review blog">
+  <meta name="author" content="Elisa Barranca">
   <title>Simple Recipes</title>
   <link rel="stylesheet" href="recipe.css" />
 
@@ -27,26 +30,26 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+
 </head>
-
 <body>
-
-<header class="site-header">
-  <div class="logo-title">
-    <img src="images/recipe-book.png" alt="recipe logo">
-    <h1>Simple Recipes</h1>
-  </div>
-
-<div class="search">
-  <input type="text" placeholder="Search recipes">
-  <span class="search-icon">🔍</span>
-</div>
+  <header class="site-header">
+    <div class="logo-title">
+      <img src="https://wddbyui.github.io/wdd131/week_9/prove/images/recipe-book.png" alt="recipe logo">
+      <h1>Simple Recipes</h1>
+    </div>
+    <div class="search">
+      <input type="text" placeholder="Search recipes">
+      <span class="search-icon">🔍</span>
+    </div>
 </header>
 
 <main>
   <section class="recipe-card">
-    <img src="images/apple-crisp.jpg" alt="apple crisp dessert">
-
+    <div class="recipe-content">
+      <span class="category-tag">dessert</span>
+      <img src="https://wddbyui.github.io/wdd131/week_9/prove/images/apple-crisp.jpg" alt="apple crisp dessert">
+      <h2>Apple Crisp</h2>
     <div class="recipe-content">
       <h2>Apple Crisp</h2>
 
@@ -54,21 +57,19 @@
         class="rating"
         role="img"
         aria-label="Rating: 4 out of 5 stars"
-      >
+      >   <!--stars given to each recipe-->
         <span aria-hidden="true">⭐</span>
         <span aria-hidden="true">⭐</span>
         <span aria-hidden="true">⭐</span>
         <span aria-hidden="true">⭐</span>
         <span aria-hidden="true">☆</span>
       </span>
-
       <p class="description">
         A warm and cozy apple crisp made with fresh apples and a buttery oat topping.
       </p>
     </div>
   </section>
 </main>
-
 <footer>
   <div class="social">
     <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates -->
@@ -76,13 +77,11 @@
     <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
     <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
   </div>
-
   <p>
     <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">
       Recipe icons created by Freepik - Flaticon
     </a>
   </p>
 </footer>
-
 </body>
 </html>
