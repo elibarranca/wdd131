@@ -1,39 +1,32 @@
-/* Basic Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-/* Color Variables from Site Plan */
 body {
   font-family: "Lato", Arial, sans-serif;
   background-color: #e7e7e7;
   color: #333;
 }
-
-/* Header with Flexbox */
 header {
   background-color: #485696;
   color: white;
   padding: 20px;
 }
-
-.header-content {
+.header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /*idea mitzi*/
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
 }
-
-.logo-section {
+/*img del logo*/
+.logo {
   display: flex;
   align-items: center;
   gap: 15px;
 }
-
-.logo-section img {
+.logo img {
   height: 50px;
   width: auto;
 }
@@ -43,7 +36,6 @@ h1 {
   font-size: 1.8rem;
 }
 
-/* Navigation Menu with Flexbox */
 nav {
   display: flex;
   gap: 20px;
@@ -61,8 +53,7 @@ nav a:hover {
   background-color: #f24c00;
 }
 
-/* Mobile Menu Button */
-.menu-btn {
+.menu-button {
   display: none;
   background-color: #fc7a1e;
   color: white;
@@ -73,7 +64,6 @@ nav a:hover {
   border-radius: 5px;
 }
 
-/* Main Content */
 main {
   max-width: 1200px;
   margin: 30px auto;
@@ -151,27 +141,27 @@ main {
   margin-bottom: 20px;
 }
 
-.form-group {
+.form {
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
 }
 
-.form-group label {
+.form label {
   margin-bottom: 5px;
   font-weight: bold;
   color: #485696;
 }
 
-.form-group input,
-.form-group textarea {
+.form input,
+.form textarea {
   padding: 10px;
   border: 2px solid #e7e7e7;
   border-radius: 5px;
   font-family: "Lato", Arial, sans-serif;
 }
 
-.submit-btn {
+.submit-button {
   background-color: #485696;
   color: white;
   border: none;
@@ -181,7 +171,7 @@ main {
   border-radius: 5px;
 }
 
-.submit-btn:hover {
+.submit-button:hover {
   background-color: #fc7a1e;
 }
 
@@ -196,7 +186,7 @@ main {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.modal.show {
+.modal.big {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -208,7 +198,7 @@ main {
   border-radius: 8px;
 }
 
-.close-btn {
+.close-button {
   position: absolute;
   top: 20px;
   right: 40px;
@@ -230,7 +220,7 @@ footer {
 
 /* Responsive Design for Mobile */
 @media (max-width: 768px) {
-  .menu-btn {
+  .menu-button {
     display: block;
   }
 
@@ -245,7 +235,7 @@ footer {
     display: flex;
   }
 
-  .header-content {
+  .header {
     flex-wrap: wrap;
   }
 
