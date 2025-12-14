@@ -76,10 +76,13 @@ footer {
     align-items: center;
   }
 
-.recipe-card {
-  border-radius: 10px;
-  gap: 2em;
-}
+  .recipe-card {
+    flex-direction: row;
+    border: 1px solid #ddd;
+    padding: 1.5em;
+    border-radius: 10px;
+    gap: 2em;
+  }
 
   .recipe-card img {
     flex: 0 1 300px;
@@ -90,11 +93,10 @@ footer {
   }
 
   .description {
-    display: block; 
+    display: block;
   }
 
   footer {
-footer {
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;

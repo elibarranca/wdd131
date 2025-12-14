@@ -1,4 +1,8 @@
-/* This is an array that stores information about activities and each item in the array is an object with properties */
+/* ===================================================================
+    REQUIREMENT 1: ARRAYS
+    This is an array that stores information about activities
+    Each item in the array is an object with properties
+    =================================================================== */
 const activities = [
     {
         name: "Porter Park",
@@ -20,7 +24,11 @@ const activities = [
     }
 ];
 
-/*This function displays the activities on the page so it loops through the array and creates HTML for each activity */
+/* ===================================================================
+    REQUIREMENT 2: FUNCTIONS
+    This function displays the activities on the page
+    It loops through the array and creates HTML for each activity
+    =================================================================== */
 function showActivities() {
     const container = document.getElementById('activities-container');
     
@@ -57,7 +65,10 @@ function showActivities() {
     }
 }
 
-/* This function opens an enlarged image in a modal*/
+/* ===================================================================
+    REQUIREMENT 2: FUNCTIONS
+    This function opens an enlarged image in a modal
+    =================================================================== */
 function openImage(imageSrc, altText) {
     const modal = document.getElementById('image-modal');
     const modalImg = document.getElementById('modal-img');
@@ -67,18 +78,27 @@ function openImage(imageSrc, altText) {
     modal.className = 'modal show';
 }
 
-/* This function closes the modal */
+/* ===================================================================
+    REQUIREMENT 2: FUNCTIONS
+    This function closes the modal
+    =================================================================== */
 function closeModal() {
     const modal = document.getElementById('image-modal');
     modal.className = 'modal';
 }
 
-/* This function opens a map link in a new tag*/
+/* ===================================================================
+    REQUIREMENT 2: FUNCTIONS
+    This function opens a map link in a new tab
+    =================================================================== */
 function openMap(mapLink) {
     window.open(mapLink, '_blank');
 }
 
-/* This function toggles the navigation menu on mobile*/
+/* ===================================================================
+    REQUIREMENT 2: FUNCTIONS (Responsive Menu)
+    This function toggles the navigation menu on mobile
+    =================================================================== */
 function toggleMenu() {
     const nav = document.getElementById('nav-menu');
     
@@ -89,15 +109,24 @@ function toggleMenu() {
     }
 }
 
-/*    Event listener for the menu toggle button */
+/* ===================================================================
+    REQUIREMENT 3: EVENTS
+    Event listener for the menu toggle button
+    =================================================================== */
 const menuButton = document.getElementById('menu-button');
 menuButton.addEventListener('click', toggleMenu);
 
-/* Event listener for the close button in modal */
+/* ===================================================================
+    REQUIREMENT 3: EVENTS
+    Event listener for the close button in modal
+    =================================================================== */
 const closeButton = document.getElementById('close-button');
 closeButton.addEventListener('click', closeModal);
 
-/* This event listener handles the form submission */
+/* ===================================================================
+    REQUIREMENT 3: EVENTS
+    This event listener handles the form submission
+    =================================================================== */
 const form = document.getElementById('contact-form');
 form.addEventListener('submit', function(event) {
     event.preventDefault(); // Stop the form from submitting normally
@@ -114,7 +143,10 @@ form.addEventListener('submit', function(event) {
     form.reset();
 });
 
-/* This event closes the modal when clicking outside the img*/
+/* ===================================================================
+    REQUIREMENT 3: EVENTS
+    This event closes the modal when clicking outside the image
+    =================================================================== */
 const modal = document.getElementById('image-modal');
 modal.addEventListener('click', function(event) {
     if (event.target === modal) {
@@ -122,5 +154,7 @@ modal.addEventListener('click', function(event) {
     }
 });
 
-/*Call the function to display activities when page loads */
+/* ===================================================================
+    Call the function to display activities when page loads
+    =================================================================== */
 showActivities();
