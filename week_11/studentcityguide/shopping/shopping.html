@@ -13,58 +13,53 @@
 </head>
 <body>
     <header>
-        <div class="header-content">
-            <div class="logo-section">
+        <div class="header">
+            <div class="logo">
                 <img src="https://elibarranca.github.io/wdd131/week_11/studentcityguide/images/logo.png" alt="Rexburg Student Guide Logo">
                 <h1>Rexburg Student Guide</h1>
             </div>
-            <button class="menu-btn" id="menu-button">Menu</button>
-            <nav id="nav-menu">
-                <a href="#">Home</a>
-                <a href="#">Shopping</a>
-                <a href="#">Wireframes</a>
+            <button class="menu-button" id="menu-button">Menu</button>
+            <nav id="menu">
+                <a href="home.html">Home</a>
+                <a href="shopping.html">Shopping</a>
+                <a href="site-plan.html">Siteplan</a>
             </nav>
         </div>
     </header>
-
     <main>
         <section class="intro">
             <h2>Welcome to Rexburg!</h2>
-            <p>This guide was created to help new BYUI students learn about the city of Rexburg. Here you'll find information about local activities, shopping, and resources available to students.</p>
+            <p>This guide was created to help new BYUI students learn about the city of Rexburg. Here you'll find information about local fun activities, shopping, and resources available to students.</p>
         </section>
 
         <h2 style="font-family: 'Roboto', sans-serif; color: #485696; margin-bottom: 20px;">Activities in Rexburg</h2>
-        
-        <!-- This div will be filled with JavaScript -->
+        <!-- This div is the one hiding the content int hejavascript like in previous assignments -->
         <div class="activities" id="activities-container"></div>
-
         <section class="contact-form">
             <h2>Contact Us</h2>
             <p>Have questions? Send us a message!</p>
-            <form id="contact-form">
+            <form id="contact">
                 <div class="form-group">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
                 </div>
-                <div class="form-group">
+                <div class="form">
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
                 </div>
-                <div class="form-group">
+                <div class="form">
                     <label for="message">Message:</label>
                     <textarea id="message" name="message" rows="4"></textarea>
                 </div>
-                <button type="submit" class="submit-btn">Send Message</button>
+                <button type="submit" class="submit-button">Send Message</button>
             </form>
         </section>
     </main>
-
-    <!-- Modal for enlarged images -->
+    <!-- I need to see a modal for enlarged images -->
     <div class="modal" id="image-modal">
-        <button class="close-btn" id="close-button">&times;</button>
-        <img id="modal-img" src="" alt="">
+        <button class="close-button" id="close-button">&times;</button>
+        <img id="modal-img" src="" alt=""> <!--nothing here but I need the alt-->
     </div>
-
     <footer>
         <p>&copy; 2024 Rexburg Student Guide | Created by Elisa Barranca | WDD 131.03</p>
     </footer>
