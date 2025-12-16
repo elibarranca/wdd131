@@ -39,7 +39,6 @@ img {
   flex: 1;
 }
 
-/* RECIPE CARD */
 .recipe-card {
   display: flex;
   flex-direction: column;
@@ -52,10 +51,9 @@ img {
 }
 
 .description {
-  display: none; /* hidden on mobile */
+  display: none;
 }
 
-/* FOOTER */
 footer {
   margin-top: 3em;
   display: flex;
@@ -68,7 +66,6 @@ footer {
   gap: 1em;
 }
 
-/* MEDIA QUERY */
 @media screen and (min-width: 650px) {
   .site-header {
     flex-direction: row;
